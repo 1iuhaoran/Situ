@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-image: url('../images/backgroundIMG.webp');
+  background-size: cover;
+}
+
+.outer {
+  display: flex;
+  width: 85%;
+  height: 100%;
+  opacity: 0.88;
+  overflow: hidden;
+}
+
+
+.nav {
+  width: 6%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(12, 22, 43);
+  border-radius: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.box {
+  display: block;
+  height: 15%;
+  width: 85%;
+  margin: 9px;
+  border-radius: 5px;
+  position: relative;
+  transition: .3s;
+  color: rgb(160, 160, 175);
+}
+
+.box i {
+  font-size: 33px;
+  position: absolute;
+  margin: 7px 0 0 10px;
+}
+
+.box:nth-child(1)::before,
+.box:nth-child(5)::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(55, 65, 81);
+  position: absolute;
+  bottom: -10px;
+}
+
+.box span {
+  position: relative;
+  top: 12px;
+  left: 60px;
+  font: 500 17px '';
+  opacity: 0;
+  transition: .1s;
+}
+
+.nav:hover {
+  width: 190px;
+}
+
+.box:hover {
+  background-color: rgb(55, 65, 81);
+}
+
+.nav:hover span {
+  opacity: 1;
+}
+
+.box:hover {
+  color: skyblue;
+}
+
+.headphoto {
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 7px 0 0 10px;
+}
+
+.headphoto1 {
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px 10px 0 10px;
+}
+
+/* 设置整体布局和样式 */
+.third {
+  display: flex;
+  flex-direction: column;
+  /* 使子元素上下排列 */
+  width: 100%;
+  /* 根据需要调整宽度 */
+  background-color: #f0f0f0;
+  /* 背景颜色 */
+  padding: 0px;
+  /* 边距 */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Ptitle {
+  font-size: 40px;
+  /* 标题字体大小 */
+  text-align: center;
+  /* 标题居中显示 */
+  margin-bottom: 20px;
+  /* 与下方内容的间距 */
+  height: 10%;
+}
+
+.Pcontent {
+  display: flex;
+  /* 启用 Flexbox 布局 */
+  width: 100%;
+  /* 占满父容器的宽度 */
+}
+
+.Pleft {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  /* 垂直排列子元素 */
+  align-items: center;
+  /* 子元素居中对齐 */
+  border-right: 1px solid #ccc;
+  /* 右侧边框 */
+}
+
+.Pleft span {
+  margin: 20px 0;
+  /* 间距 */
+  font-size: 20px;
+
+}
+
+.Pright {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  /* 垂直排列子元素 */
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* 内边距 */
+}
+
+.personalcard {
+  display: flex;
+  align-items: center;
+  /* 水平居中对齐图片和文本 */
+  /* 与下方设置的间距 */
+  background-color: white;
+  height: 300px;
+  width: 80%;
+  padding: 20px;
+  /* 内边距，增加可点击区域的舒适度 */
+  margin-bottom: 20px;
+  /* 与下方设置的间距 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* 可选的阴影效果提升视觉层次 */
+  border-radius: 5px;
+  /* 圆角效果 */
+}
+
+.personalcard img {
+  width: 150px;
+  margin: 20px;
+}
+
+.Psettings {
+  display: flex;
+  flex-direction: column;
+  /* 子元素垂直排列 */
+  align-items: center;
+  /* 子元素水平居中 */
+  padding: 20px;
+  /* 外边距提供空间感 */
+  margin: 20px;
+  /* 与其他元素的间隔 */
+  background-color: #F0F0F0;
+  /* 白色背景 */
+}
+
+.Psettingson {
+  width: 100%;
+  /* 占满父容器的宽度，可调整为适合的宽度 */
+  display: flex;
+  justify-content: space-between;
+  /* 元素在水平方向上均匀分布 */
+  padding: 10px;
+  /* 内边距 */
+}
+
+
+.tip {
+  text-align: center;
+  /* 文本居中 */
+  margin-top: 10px;
+  /* 与上方元素的间隔 */
+  width: 90%;
+  /* 宽度稍窄，突出显示 */
+  color: rgb(160, 160, 175);
+  font-size: 14px;
+}
+
+.exit {
+  margin-top: 20px;
+  /* 与上方元素的间隔较大 */
+}
+
+.exit button {
+  padding: 10px 20px;
+  /* 按钮的内边距 */
+  background-color: #4CAF50;
+  /* 绿色背景 */
+  color: white;
+  /* 白色文本 */
+  border: none;
+  /* 无边框 */
+  border-radius: 5px;
+  /* 圆角边框 */
+  cursor: pointer;
+  /* 鼠标指针变化 */
+  font-size: 16px;
+  /* 字体大小 */
+}

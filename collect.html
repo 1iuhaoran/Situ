@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <link rel="stylesheet" href="./css/collect.css">
+  <title>Collect</title>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="nav">
+      <a href="./Personal.html" class="box"><img src="./images/luffy.jpeg" class="headphoto"><span>个人中心</span></a>
+      <a href="./information.html" class="box nav-item"><i class="iconfont icon-interactive"></i><span>消息</span></a>
+      <a href="#" class="box nav-item"><i class="iconfont icon-addressbook"></i><span> 好友</span></a>
+      <a href="#" class="box nav-item"><i class="iconfont icon-faxian"></i><span>发现</span></a>
+      <a href="./collect.html" class="box nav-item active"><i class="iconfont icon-like"></i><span>收藏</span></a>
+      <a href="#" class="box nav-item"><i class="iconfont icon-qrcode_fill"></i><span>我的二维码</span></a>
+      <a href="./login.html" class="box"><i class="iconfont icon-exit"></i><span>退出</span></a>
+    </div>
+    <div class="fourth">
+      <div class="fourLeft">
+        <input type="search" placeholder="搜索" class="fourth-search-input">
+        <div class="fourth-new">
+          新建笔记
+        </div>
+        <div class="fourth-collect">
+          全部收藏
+        </div>
+        <div class="fourth-link">
+          链接
+        </div>
+        <div class="fourth-label">
+          标签
+        </div>
+      </div>
+      <div class="fourRight">
+        <div class="fourth-title">
+          全部收藏
+        </div>
+        <div class="fourth-content">
+          <div class="fourth-content-title">十大优秀学生！揭晓<div class="author">山东科技大学</div>
+            <div class="fourth-content-title-time">2024年5月1日</div>
+          </div>
+          <div class="fourth-content-title">山科为什么是大专<div class="author">姜鹏飞</div>
+            <div class="fourth-content-title-time">2024年5月1日</div>
+          </div>
+          <div class="fourth-content-title">端午放假通知<div class="author">山东科技大学</div>
+            <div class="fourth-content-title-time">2024年5月1日</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+      item.addEventListener('click', event => {
+        event.preventDefault(); // 阻止默认行为
+        const target = event.currentTarget;
+        const href = target.getAttribute('href')
+        window.location.href = href;
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-image: url('../images/backgroundIMG.webp');
+  background-size: cover;
+}
+
+.outer {
+  display: flex;
+  width: 85%;
+  height: 100%;
+  opacity: 0.88;
+  overflow: hidden;
+}
+
+.main {
+  width: 94%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nav {
+  width: 6%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(12, 22, 43);
+  border-radius: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.box {
+  display: block;
+  height: 15%;
+  width: 85%;
+  margin: 9px;
+  border-radius: 5px;
+  position: relative;
+  transition: .3s;
+  color: rgb(160, 160, 175);
+}
+
+.box i {
+  font-size: 33px;
+  position: absolute;
+  margin: 7px 0 0 10px;
+}
+
+.box:nth-child(1)::before,
+.box:nth-child(5)::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(55, 65, 81);
+  position: absolute;
+  bottom: -10px;
+}
+
+.box span {
+  position: relative;
+  top: 12px;
+  left: 60px;
+  font: 500 17px '';
+  opacity: 0;
+  transition: .1s;
+}
+
+.nav:hover {
+  width: 190px;
+}
+
+.box:hover {
+  background-color: rgb(55, 65, 81);
+}
+
+.nav:hover span {
+  opacity: 1;
+}
+
+.box:hover {
+  color: skyblue;
+}
+
+.headphoto {
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 7px 0 0 10px;
+}
+
+.headphoto1 {
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px 10px 0 10px;
+}
+
+.second {
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  background-color: #F8F7F7;
+  overflow: hidden;
+}
+
+/* 设置整体布局和样式 */
+.third {
+  display: flex;
+  flex-direction: column;
+  /* 使子元素上下排列 */
+  width: 100%;
+  /* 根据需要调整宽度 */
+  background-color: #f0f0f0;
+  /* 背景颜色 */
+  padding: 0px;
+  /* 边距 */
+}
+
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.second input {
+  margin-top: 10px;
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 205, 205);
+  margin-left: 10px;
+}
+
+.friend {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.s {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+}
+
+.search-input {
+  background-color: #F8F7F7;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("G:/WEB/web前端/小项目/思途杯/images/");
+  background-position: left 10px center;
+  background-repeat: no-repeat;
+}
+
+.friends {
+  background-color: #f8f8f8;
+  min-height: 85px;
+  /* 你可以考虑使这个高度更灵活，例如用min-height代替固定高度 */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 0 10px;
+  /* 添加内边距以防内容紧贴边缘 */
+}
+
+
+.text {
+  display: flex;
+  flex-direction: column;
+  /* 已正确设置为列布局 */
+  background-color: #f8f7f7;
+  flex-grow: 1;
+  /* 允许它填满除其他内容外的空间 */
+  position: relative;
+  /* 正确的，允许内部时间使用绝对定位 */
+}
+
+
+.textname {
+  font-size: 17px;
+  /* 保持当前大小，或根据需要调整 */
+  color: #333;
+  background-color: #F8F7F7;
+  padding: 10px 0;
+  /* 为顶部和底部添加一些内边距 */
+}
+
+.texttime {
+  font-size: 11px;
+  color: #928888;
+  position: absolute;
+  top: 10px;
+  /* 适当调整以匹配 .textname 的内边距 */
+  right: 16px;
+  /* 保持一致的内边距 */
+  margin: 0;
+  /* 移除额外的外边距 */
+}
+
+
+.texttext {
+  margin: 0 10px 10px 10px;
+  /* 确保四周都有内边距 */
+  font-size: 11px;
+  height: 20px;
+  /* 考虑使用min-height以增加灵活性 */
+  display: flex;
+  align-items: center;
+  /* 垂直居中文本 */
+  justify-content: start;
+  /* 确保文本从左侧开始 */
+}
+
+
+.container {
+  height: 100vh;
+  width: 75%;
+  /* border-radius: 4px; */
+  border: 0.5px solid #e0e0e0;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+}
+
+.content {
+  width: calc(100% - 40px);
+  padding: 20px;
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.content:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.bubble {
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  color: #000;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+.item-left .bubble {
+  margin-left: 15px;
+  background-color: #fff;
+}
+
+.item-left .bubble:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+}
+
+.item-right .bubble {
+  margin-right: 15px;
+  background-color: #9eea6a;
+}
+
+.item-right .bubble:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #9eea6a;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+}
+
+.item {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+}
+
+.item.item-right {
+  justify-content: flex-end;
+}
+
+.item.item-center {
+  justify-content: center;
+}
+
+.item.item-center span {
+  font-size: 12px;
+  padding: 2px 4px;
+  color: #fff;
+  background-color: #dadada;
+  border-radius: 3px;
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  user-select: none;
+}
+
+.avatar img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.input-area {
+  border-top: 0.5px solid #e0e0e0;
+  height: 150px;
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+}
+
+textarea {
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: hidden;
+  outline: none;
+  resize: none;
+}
+
+.button-area {
+  display: flex;
+  height: 40px;
+  margin-right: 10px;
+  line-height: 40px;
+  padding: 5px;
+  justify-content: flex-end;
+  color: green;
+}
+
+.button-area button {
+  width: 80px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  float: right;
+  cursor: pointer;
+  color: green;
+}
+
+.container-name {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  background-color: white;
+  text-align: left;
+  line-height: 7vh;
+}
+
+
+.nametype {
+  margin: 0 30px auto;
+  font-size: 20px;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+
+.active {
+  color: skyblue;
+}

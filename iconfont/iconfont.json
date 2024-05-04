@@ -1,0 +1,79 @@
+{
+  "id": "4530710",
+  "name": "思途杯",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39869397",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "ea90",
+      "unicode_decimal": 60048
+    },
+    {
+      "icon_id": "39973214",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "101a9",
+      "unicode_decimal": 65961
+    },
+    {
+      "icon_id": "40177624",
+      "name": "exit02",
+      "font_class": "exit",
+      "unicode": "e71d",
+      "unicode_decimal": 59165
+    },
+    {
+      "icon_id": "40177627",
+      "name": "like",
+      "font_class": "like",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "7008890",
+      "name": "addpeople",
+      "font_class": "addpeople",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "7008892",
+      "name": "addressbook",
+      "font_class": "addressbook",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "7008951",
+      "name": "interactive",
+      "font_class": "interactive",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    },
+    {
+      "icon_id": "7008967",
+      "name": "mine",
+      "font_class": "mine",
+      "unicode": "e70e",
+      "unicode_decimal": 59150
+    },
+    {
+      "icon_id": "7008977",
+      "name": "other",
+      "font_class": "other",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    },
+    {
+      "icon_id": "7008990",
+      "name": "qrcode_fill",
+      "font_class": "qrcode_fill",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    }
+  ]
+}
